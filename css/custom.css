@@ -2,6 +2,30 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Sora", sans-serif;
   background-color: #fafaf9;
@@ -26,8 +50,11 @@ body {
   aspect-ratio: 2.21/1;
 }
 
-.card__tag {
+.card__tagList {
   margin-block-start: 1rem;
+  display: flex;
+}
+.card__tagItem {
   font-size: 0.625rem;
   color: #883ae1;
   background-color: #e6d6fc;
